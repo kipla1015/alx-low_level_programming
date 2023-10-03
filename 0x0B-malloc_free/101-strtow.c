@@ -54,7 +54,7 @@ int count_words(char *str)
   * Otherwise - a pointer to an array of strings (words).
   */
 
- char **strtow(char *str)
+char **strtow(char *str)
 {
 	char **strings;
 	int index = 0, words, w, letters, l;
