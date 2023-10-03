@@ -37,14 +37,14 @@ int count_words(char *str)
 	for (index = 0; *(str + index); index++)
 		len++;
 	for (index = 0; index < len; index++)
-		{
-			if (*(str + index) != ' ')
-			{
-				words++;
-				index += word_len(str + index);
-			}
-		}
-	return (words);
+	{
+	if (*(str + index) != ' ')
+	{
+		words++;
+		index += word_len(str + index);
+	}
+	}
+return (words);
 }
 
 /**
